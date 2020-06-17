@@ -30,6 +30,8 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
+
+
     private ScrollView weatherLayout;
     private TextView titleCity;
     private TextView titleUpdateTime;
@@ -90,6 +92,8 @@ public class WeatherActivity extends AppCompatActivity {
             loadBingPic();  // 没有读取到则加载
         }
     }
+
+
     /**
      * 根据天气Id请求城市天气信息
      */
@@ -131,6 +135,8 @@ public class WeatherActivity extends AppCompatActivity {
         });
         loadBingPic();
     }
+
+
     /**
      * 处理并展示Weather实体类中的数据
      * @param weather
