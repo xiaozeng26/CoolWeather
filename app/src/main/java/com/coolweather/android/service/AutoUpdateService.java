@@ -22,13 +22,16 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class AutoUpdateService extends Service {
+
     public AutoUpdateService() {
     }
+
     @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
         return null;
     }
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         updateWeather();    // 更新天气
@@ -43,6 +46,7 @@ public class AutoUpdateService extends Service {
         manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP,triggerAtTime,pi);
         return super.onStartCommand(intent,flags,startId);
     }
+
     /**
      * 更新天气信息
      */
@@ -75,6 +79,7 @@ public class AutoUpdateService extends Service {
             });
         }
     }
+
     /**
      * 更行必应每日一图
      */
