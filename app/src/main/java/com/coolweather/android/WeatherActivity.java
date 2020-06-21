@@ -37,7 +37,6 @@ import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
 
-
     private ScrollView weatherLayout;
     private TextView titleCity;
     private TextView titleUpdateTime;
