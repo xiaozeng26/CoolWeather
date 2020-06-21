@@ -112,6 +112,8 @@ public class ChooseAreaFragment extends Fragment {
         });
         queryProvinces();   // 加载省级数据
     }
+
+
     /**
      * 查询全国所有的省，优先从数据库中查，如果没有查询到再到服务器上查
      */
@@ -154,6 +156,8 @@ public class ChooseAreaFragment extends Fragment {
             queryFromServer(address, "city");
         }
     }
+
+
     /**
      * 查询选中市内所有的县，优先从数据库中查询，如果没有查询到就从服务器中查询数据
      */
@@ -177,6 +181,8 @@ public class ChooseAreaFragment extends Fragment {
             queryFromServer(address, "county");
         }
     }
+
+
     /**
      * 根据传入的地址和类型从服务器中查询省市县数据
      */
@@ -235,6 +241,7 @@ public class ChooseAreaFragment extends Fragment {
             progressDialog.setCanceledOnTouchOutside(false);
         }
     }
+
     /**
      * 关闭进度对话框
      */
